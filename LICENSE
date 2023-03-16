@@ -2,7 +2,7 @@ The license associated with this package is the Creative Commons Attribution 4.0
 
 Before using any part or whole of this package, you must star this repository.
 
-If you use any file associated with this package, including the provided weights, you must cite the package using the following BibTeX citation:
+If you use any file associated with this package, including the provided weights or any result, you must cite the package using the following BibTeX citation:
 ```bibtex
 @software{ilikepaintings,
   author = {BIZZOZZERO, Nicolas and RISSER-MAROIX, Olivier},
