@@ -13,10 +13,8 @@ setup(
     install_requires=[
         'torch'
     ],
-    data_files=[
-        ("ilikepaintings/weights/VAPS999", ["ilikepaintings/weights/VAPS999/ViT-B-32_linear.pth",
-                             "ilikepaintings/weights/VAPS999/ViT-L-14_linear.pth"]),
-        ("ilikepaintings/weights/sidhu", ["ilikepaintings/weights/sidhu/ViT-B-32_linear.pth",
-                           "ilikepaintings/weights/sidhu/ViT-L-14_linear.pth"])
-    ]
+    package_data={
+        "ilikepaintings": ["weights/*/*.pth"]
+    },
+    license_files=["LICENSE"]
 )

@@ -2,8 +2,8 @@ import pkg_resources
 import torch
 import io
 
-VALID_MODELS = ["ViT-B/32", "ViT-B/14"]
-VALID_DATASETS = ["VAPS999", "sidhu"]
+VALID_MODELS = ("RN50", "RN50x4", "RN50x16", "RN50x64", "RN101", "ViT-B/16", "ViT-B/32", "ViT-L/14", "ViT-L/14@336px")
+VALID_DATASETS = ("VAPS999", "sidhu")
 
 def load_predictor(clip_model_name, dataset_name="VAPS999"):
     # Check if clip_model_name is valid
@@ -20,13 +20,14 @@ def load_predictor(clip_model_name, dataset_name="VAPS999"):
     clip_model_name = clip_model_name.replace("/", "-")
     
     # Construct the resource path to the weight file
-    resource_path = f"ilikepaintings/weights/{dataset_name}/{clip_model_name}_linear.pth"
+    resource_path = f"weights/{dataset_name}/{clip_model_name}.pth"
     
     # Load the contents of the resource file
-    weight_bytes = pkg_resources.resource_string(__name__, resource_path)
+    weight_path = pkg_resources.resource_filename("ilikepaintings", resource_path)
     
     # Load the weights using PyTorch
-    state_dict = torch.load(io.BytesIO(weight_bytes))
+    with open(weight_path, 'rb') as f:
+        state_dict = torch.load(f)
     in_features = state_dict['weight'].shape[1]
     out_features = state_dict['weight'].shape[0]
     linear_layer = torch.nn.Linear(in_features=in_features, out_features=out_features)
