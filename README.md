@@ -30,13 +30,36 @@ predictor = load_predictor(clip_model_name, dataset_name)
 
 
 
+## Benchmark
+
+The following table shows the cross-validation scores (`k=5`) of the linear model with the best hyper-parameters, measured using the Pearson correlation coefficient. 
+These scores were obtained for each CLIP model backend and dataset. The final released models were retrained using the same hyper-parameters and fitted on the whole dataset.
+All embeddings are L2 normalized. 
+
+
+| CLIP | VAPS-999 | Sidhu |
+| --- | --- | --- |
+| RN50 | _0.6785_ | _0.8039_ 🥉 |
+| RN50x4 | _0.7063_ | _0.7858_ | 
+| RN50x16 | _0.7307_ 🥉 | _0.8150_ 🥈 | 
+| RN50x64 | _0.7335_ 🥈 | **0.8199** 🥇 | 
+| RN101 | _0.6904_ | _0.7964_ | 
+| ViT-B/16 | _0.6925_ | _0.7863_ | 
+| ViT-B/32 | _0.6907_ | _0.7823_ | 
+| ViT-L/14 | _0.7265_ | _0.7941_ | 
+| ViT-L-14@336px | **0.7382** 🥇 | _0.7985_ | 
+
+
+
+
+
 ## License
 
 The license associated with this package is the Creative Commons Attribution 4.0 International License [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), WITH the following additional conditions:
 
 Before using any part or whole of this package, you must star this repository.
 
-If you use any file associated with this package, including the provided weights, you must cite the package using the following BibTeX citation:
+If you use any file associated with this package, including the provided weights or results, you must cite the package using the following BibTeX citation:
 ```bibtex
 @software{ilikepaintings,
   author = {BIZZOZZERO, Nicolas and RISSER-MAROIX, Olivier},
