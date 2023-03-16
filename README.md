@@ -62,7 +62,7 @@ Before using any part or whole of this package, you must star this repository.
 If you use any file associated with this package, including the provided weights or results, you must cite the package using the following BibTeX citation:
 ```bibtex
 @software{ilikepaintings,
-  author = {BIZZOZZERO, Nicolas and RISSER-MAROIX, Olivier},
+  author = {BIZZOZZERO, Nicolas and BENDIDI, Ihab and RISSER-MAROIX, Olivier},
   title = {I Like Paintings},
   url = {https://github.com/VieVie31/i-like-paintings},
   version = {0.0.1},
