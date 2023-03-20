@@ -3,6 +3,9 @@
 I Like Paintings is a Python package that can predict the painting appreciation (if people like or not the painting) from the image using a linear regressor trained on top of a frozen CLIP features extractor model on two paintings appreciation datasets. The package contains pre-trained weights for nine models on two datasets (VAPS-999 and Sidhu's one).
 All linear predictors in this package assume that their input embeddings are L2 normalized.
 
+<a href="https://colab.research.google.com/github/VieVie31/i-like-paintings/blob/master/demo.ipynb" target="_parent\">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 
 ## Installation
@@ -28,7 +31,8 @@ dataset_name = VALID_DATASETS[0]
 predictor = load_predictor(clip_model_name, dataset_name)
 ```
 
-Take a look at the `demo.ipynb` file for a more complete exemple on a real painting…
+For a fully working example on a real painting, look at `demo.ipynb` or try on <a href="https://colab.research.google.com/github/VieVie31/i-like-paintings/blob/master/demo.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> 
+
 
 
 ## Benchmark
