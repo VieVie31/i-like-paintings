@@ -10,7 +10,8 @@ setup(
     url='https://github.com/VieVie31/i-like-painings',
     packages=find_packages(),
     install_requires=[
-        'torch'
+        'torch',
+        'numpy'
     ],
     package_data={
         "ilikepaintings": ["weights/*/*.pth"]
