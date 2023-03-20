@@ -3,9 +3,8 @@
 I Like Paintings is a Python package that can predict the painting appreciation (if people like or not the painting) from the image using a linear regressor trained on top of a frozen CLIP features extractor model on two paintings appreciation datasets. The package contains pre-trained weights for nine models on two datasets (VAPS-999 and Sidhu's one).
 All linear predictors in this package assume that their input embeddings are L2 normalized.
 
-<a href="https://colab.research.google.com/github/VieVie31/i-like-paintings/blob/master/demo.ipynb" target="_parent\">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VieVie31/i-like-paintings/blob/master/demo.ipynb)
+[![PyPI version](https://badge.fury.io/py/ilikepaintings.svg)](https://badge.fury.io/py/ilikepaintings)
 
 
 ## Installation
@@ -31,7 +30,7 @@ dataset_name = VALID_DATASETS[0]
 predictor = load_predictor(clip_model_name, dataset_name)
 ```
 
-For a fully working example on a real painting, look at `demo.ipynb` or try on <a href="https://colab.research.google.com/github/VieVie31/i-like-paintings/blob/master/demo.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> 
+For a fully working example on a real painting, look at `demo.ipynb` or try on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VieVie31/i-like-paintings/blob/master/demo.ipynb) !
 
 
 
@@ -60,9 +59,9 @@ All embeddings are L2 normalized.
 
 ## License
 
-The license associated with this package is the Creative Commons Attribution 4.0 International License [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), WITH the following additional conditions:
+The license associated with this package is the Creative Commons Attribution 4.0 International License [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), **WITH** the following additional conditions:
 
-Before using any part or whole of this package, you must star this repository.
+Before using any part or whole of this package, you must star :star: this repository.
 
 If you use any file associated with this package, including the provided weights or results, you must cite the package using the following BibTeX citation:
 ```bibtex

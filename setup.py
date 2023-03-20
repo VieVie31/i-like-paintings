@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='ilikepaintings',
-    version='0.0.1',
+    version='0.0.2',
     author='Nicolas BIZZOZZERO, Ihab BENDIDI, Olivier RISSER-MAROIX',
     author_email='orissermaroix@gmail.com',
     description='A package for predicting painting appreciation from images using a linear regressor on top of a frozen CLIP model',
