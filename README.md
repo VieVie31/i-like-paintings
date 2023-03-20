@@ -28,6 +28,7 @@ dataset_name = VALID_DATASETS[0]
 predictor = load_predictor(clip_model_name, dataset_name)
 ```
 
+Take a look at the `demo.ipynb` file for a more complete exemple on a real painting…
 
 
 ## Benchmark
