@@ -69,7 +69,7 @@ If you use any file associated with this package, including the provided weights
   author = {BIZZOZZERO, Nicolas and BENDIDI, Ihab and RISSER-MAROIX, Olivier},
   title = {I Like Paintings},
   url = {https://github.com/VieVie31/i-like-paintings},
-  version = {0.0.1},
+  version = {0.0.2},
   date = {2023-03-16},
 }
 ```
